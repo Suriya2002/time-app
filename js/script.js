@@ -75,14 +75,14 @@ function init() {
     let temp = setTimeout(init, 500);
 }
 
-// Displays the text input only when clicked on the google icon and disappears if clicked anywhere else.
+// Display the text input only when clicked on the google icon and disappears if clicked anywhere else
 document.querySelector('.google').addEventListener('click', function () {
     document.querySelector('.search').style.transform = 'scale(1)';
 });
 document.querySelector('.container').addEventListener('click', function (ev) {
     document.querySelector('.search').style.transform = 'scale(0)';
 
-    // This is important! If removed, we'll get both alerts.
+    // This is important! If removed, we'll get both alerts
     ev.stopPropagation();
 });
 
@@ -136,7 +136,7 @@ function changeBackground(hour) {
 }
 
 /* *************************************************************************** */
-/* Zero Innfront of Time (if time < 10) Implementation */
+/* Zero Infront of Time (if time < 10) Implementation */
 /* *************************************************************************** */
 function addZero(time) {
     if (time < 10) time = '0' + time;
