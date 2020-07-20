@@ -1,0 +1,76 @@
+@media only screen and (max-width: 1300px) {
+    .google {
+        transform: scale(1.2);
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .greetings {
+        width: 95vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .time {
+        width: 80vw;
+
+        &__seconds {
+            font-size: 6rem !important;
+        }
+
+        &__am-pm {
+            font-size: 3rem !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    html {
+        font-size: 45%;
+    }
+
+    .google {
+        transform: scale(1.5);
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .time {
+        &__seconds-box {
+            display: none;
+        }
+
+        &__am-pm {
+            font-size: 5rem !important;
+        }
+    }
+
+    .google {
+        margin: 3rem;
+        transform: scale(1.1);
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    html {
+        font-size: 35%;
+    }
+
+    .google {
+        transform: scale(1.5);
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .time {
+        &__am-pm {
+            display: none;
+        }
+    }
+}

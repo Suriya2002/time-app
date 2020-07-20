@@ -1,0 +1,125 @@
+body {
+    color: #fff;
+    background-image: url('../images/1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    text-align: center;
+    text-shadow: 0 2rem 2rem #000;
+    cursor: default;
+}
+
+/* *************************************************************************** */
+/* Time with Am/Pm */
+/* *************************************************************************** */
+.time {
+    font-size: 10rem;
+    font-weight: 600;
+    text-align: center;
+
+    &__seconds-box {
+        font-size: 4rem;
+    }
+
+    &__am-pm {
+        font-size: 2rem;
+    }
+}
+
+/* *************************************************************************** */
+/* Greetings and Name  */
+/* *************************************************************************** */
+.greetings {
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+/* *************************************************************************** */
+/* Date with Year  */
+/* *************************************************************************** */
+.date {
+    font-size: 5rem;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 0 2rem 2rem #000;
+
+    &__year {
+        font-size: 18rem;
+        font-weight: 600;
+        opacity: 0.3;
+    }
+}
+
+/* *************************************************************************** */
+/* Google Search (Input Textbox and Search Button) */
+/* *************************************************************************** */
+.search {
+    transition: all 0.3s;
+
+    &__input {
+        color: #fff;
+        background-color: transparent;
+        font-size: 1.5rem;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s;
+
+        &:focus,
+        &:active {
+            outline: none;
+            border: none;
+            border-bottom: 0.2rem solid #fff !important;
+            cursor: text;
+        }
+
+        &:hover {
+            border-bottom: 0.2rem solid rgba(255, 255, 255, 0.3);
+            cursor: pointer;
+        }
+    }
+}
+
+/* *************************************************************************** */
+/* Reuseable Utilities */
+/* *************************************************************************** */
+.btn {
+    &--search {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: #fff;
+        font-size: 2rem;
+        transition: all 0.3s;
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.3);
+            text-shadow: 0 2rem 2rem #000;
+        }
+
+        &:focus,
+        &:active {
+            transform: scale(1.1);
+        }
+    }
+}
+.icon {
+    &--google {
+        font-size: 3rem;
+        transition: all 0.3s;
+
+        &:hover {
+            text-shadow: 0 2rem 2rem #000;
+            cursor: pointer;
+            transform: scale(1.3);
+        }
+
+        &:focus,
+        &:active {
+            transform: scale(1.1);
+        }
+    }
+}

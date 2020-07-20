@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required Meta Tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;900&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/af74b275ad.js" crossorigin="anonymous"></script>
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="./css/styles.css" />
+
+        <!-- Title and Fav-icon -->
+        <title>Time App</title>
+        <link rel="shortcut icon" href="./images/fav-icon.png" type="image/png" />
+    </head>
+
+    <body>
+        <div class="container">
+            <!-- --------------------------------------------------------------------------- -->
+            <!-- Time with Am/Pm -->
+            <!-- --------------------------------------------------------------------------- -->
+            <div class="time">
+                <span class="time__hour">00</span>:<span class="time__minutes">00</span
+                ><span class="time__seconds-box">: <span class="time__seconds">00</span> </span>
+                <small class="time__am-pm">am</small>
+            </div>
+
+            <!-- --------------------------------------------------------------------------- -->
+            <!-- Greetings and Name -->
+            <!-- --------------------------------------------------------------------------- -->
+            <div class="greetings">
+                <span class="greetings__time">Good morning</span>,
+                <span class="greetings__name">Suriya</span>.
+            </div>
+
+            <!-- --------------------------------------------------------------------------- -->
+            <!-- Date with Year -->
+            <!-- --------------------------------------------------------------------------- -->
+            <div class="date">
+                <span class="date-box">
+                    <span class="date__day">05</span><sup class="date__super-script">th</sup>
+                    <span class="date__month">March</span>
+                </span>
+                <span class="date__year">2002</span>
+            </div>
+        </div>
+
+        <!-- --------------------------------------------------------------------------- -->
+        <!-- Google Search -->
+        <!-- --------------------------------------------------------------------------- -->
+        <form class="google" action="https://www.google.com/search" method="GET">
+            <!-- Google Button -->
+            <label class="btn btn--google" for="search"
+                ><i class="fab fa-google icon icon--google"></i
+            ></label>
+
+            <!-- --------------------------------------------------------------------------- -->
+            <!-- Input Textbox and Search Button -->
+            <!-- --------------------------------------------------------------------------- -->
+            <div class="search">
+                <input id="search" class="search__input" type="text" name="q" autocomplete="off" />
+                <button type="submit" class="btn btn--search"><i class="fas fa-search"></i></button>
+            </div>
+        </form>
+
+        <!-- External JavaScript -->
+        <script type="text/javascript" src="./js/script.js"></script>
+    </body>
+</html>
